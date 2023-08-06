@@ -1,0 +1,47 @@
+@import "variables";
+
+body {
+  &.light {
+    /* App container style :: Begins */
+    .app-container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      padding: 3rem;
+      background-color: $background-color--light;
+
+      .quiz-contaner {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        border-radius: 1rem 1rem 0 0;
+
+        /* Side navbar style :: Begins */
+        .side-navbar {
+          width: 22rem;
+          height: 100%;
+          border-radius: 1rem 0 0 1rem;
+          background-color: $primary-color--light;
+          transition: width 1s ease-in-out;
+        }
+        /* Side navbar style :: Ends */
+
+        /* Right side style :: Begins */
+        .right-side-conatiner {
+          width: 100%;
+          min-width: calc(100% - 22rem);
+          #mainContainerDiv.main-container-div {
+            width: 100%;
+            height: calc(100% - 4rem);
+          }
+        }
+        /* Right side style :: Ends */
+      }
+    }
+    .quiz-question,
+    .quiz-ans {
+      font-size: $quiz-font-size;
+      font-family: $quiz-font-family;
+    }
+  }
+}

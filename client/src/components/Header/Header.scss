@@ -1,0 +1,42 @@
+@import "../../variables";
+.header-container {
+  width: 100%;
+  height: 4rem;
+  border-radius: 0 1rem 0 0;
+  background-color: white;
+  box-shadow: inset 0 -1px 0 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+
+  header.header{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+
+    .header-left-container{
+      flex: 1; 
+      .side-Navbar-btn {
+        display: flex;
+        justify-content: space-around;
+        height: 1.5rem;
+        width: 27px;
+        flex-direction: column;
+        span {
+          display: inline-block;
+          width: 27px;
+          height: 3px;
+          background-color: $primary-color--light;
+          &:nth-child(2){
+            width: 18px;
+          }
+          &:nth-child(3){
+            width: 9px;
+          }
+        }
+      }
+    }
+    .header-right-container{
+      flex: 1;
+    }
+  }
+}
