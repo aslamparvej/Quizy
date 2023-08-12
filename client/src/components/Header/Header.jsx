@@ -6,12 +6,16 @@ const Header = () => {
 
   const sideNavbarAnimation = () => {
     const sideNavbar = document.getElementById("sideNavbar");
+    const logo = document.getElementById("logo");
+
     if (sideNavbarAnimationFlag) {
       sideNavbar.style.width = "4rem";
+      logo.style.fontSize = "0";
       sideNavbarAnimationFlag = false;
     } else {
       sideNavbar.style.width = "22rem";
       sideNavbarAnimationFlag = true;
+      logo.style.fontSize = "inherit";
     }
   };
 
